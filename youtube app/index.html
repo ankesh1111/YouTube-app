@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a63ce71be3.js" crossorigin="anonymous"></script>
+    <style>
+        #show_videos{
+    display:grid ;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+#navbar{
+    width:100%;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    margin-top: 20px;
+}
+.icon{
+    color:red;
+    font-size: 20px;
+    border: 1px solid teal;
+}
+.icon1{
+    margin-left: 40px;
+    font-size: 15px;
+}
+#nav1{
+    font-size: 20px;
+}
+#query{
+    margin-left: 200px;
+    width: 360px;
+    height: 40px;
+    margin-top: 10px;
+}
+button{
+    width: 70px;
+    height: 40px;
+    background-color: white;
+ 
+
+}
+.vid{
+    margin-left: 100px;
+    font-size: 30px;
+}
+#you{
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <i class="fa-solid fa-bars icon1"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+            <i id="you">YouTube</i>
+
+            <input type="text" id="query" placeholder="Search">
+            <button onclick="searchVideo()"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <i class="fa-solid fa-microphone vid"></i>
+            <i class="fa-solid fa-video vid"></i>
+
+            <i class="fa-solid fa-bell vid"></i>
+            
+        </div>
+
+    </div>
+    <div id="show_videos"></div>
+</body>
+</html>
+
+<script src="main.js"></script>
+
+
+
+
+<!-- <iframe 
+    width="560"
+     height="315" 
+     src="https://www.youtube.com/embed/dOl5uO6PPZY" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; 
+     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowfullscreen></iframe> -->
